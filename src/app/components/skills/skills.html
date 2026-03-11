@@ -1,1 +1,26 @@
-<p>skills works!</p>
+<div class="container py-5">
+    <h2 class="text-center mb-4 fw-bolder fs-1">Mis Habilidades</h2>
+
+
+
+    <div class="row justify-content-center">
+
+        @for(habilidad of misHabilidades; track habilidad.nombre){
+
+            <div class="justify-content-center w-auto col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img [src]="habilidad.imagen" [alt]="habilidad.nombre" class="profile-img">
+                            <h3 class="fs-2 fw-bold">{{ habilidad.nombre }}</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="fs-3">{{ habilidad.descripcion }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

@@ -1,0 +1,49 @@
+{
+    "habilidades": [
+        {
+            "nombre": "HTML",
+            "descripcion": "Lenguaje de marcado estándar para la creación de la estructura y el contenido de sitios web.",
+            "imagen": "img/html.png"
+        },
+        {
+            "nombre": "CSS",
+            "descripcion": "Lenguaje de diseño encargado del estilo visual, maquetación y adaptabilidad de las páginas.",
+            "imagen": "img/css.png"
+        },
+        {
+            "nombre": "JavaScript",
+            "descripcion": "Lenguaje de programación fundamental para añadir interactividad y lógica dinámica en el cliente.",
+            "imagen": "img/javascript.png"
+        },
+        {
+            "nombre": "Angular",
+            "descripcion": "Framework robusto para el desarrollo de aplicaciones web escalables y de alto rendimiento.",
+            "imagen": "img/angular.png"
+        },
+        {
+            "nombre": "Bootstrap",
+            "descripcion": "Framework de diseño centrado en el desarrollo ágil de interfaces responsivas y modernas.",
+            "imagen": "img/bootstrap.png"
+        },
+        {
+            "nombre": "Java",
+            "descripcion": "Lenguaje de programación orientado a objetos utilizado para el desarrollo robusto de backend.",
+            "imagen": "img/java.png"
+        },
+        {
+            "nombre": "Spring Boot",
+            "descripcion": "Framework que facilita la creación de aplicaciones basadas en Spring listas para producción.",
+            "imagen": "img/springboot.png"
+        },
+        {
+            "nombre": "MySQL",
+            "descripcion": "Sistema de gestión de bases de datos relacionales ampliamente utilizado por su fiabilidad.",
+            "imagen": "img/mysql.png"
+        },
+        {
+            "nombre": "PostgreSQL",
+            "descripcion": "Potente base de datos relacional de código abierto conocida por su extensibilidad y estándares.",
+            "imagen": "img/postgresql.png"
+        }
+    ]
+}
