@@ -24,12 +24,6 @@ Es necesario tener instalado **Node.js** (v18+) y el **Angular CLI**. Si no tien
 ```bash
 npm install -g @angular/cli
 
-# Clonar el repositorio
-git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
-
-# Acceder a la carpeta
-cd tu-repositorio
-
 # Instalar todas las dependencias necesarias
 npm install
 
