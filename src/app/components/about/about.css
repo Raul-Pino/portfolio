@@ -1,0 +1,115 @@
+.foto {
+  width: 200px;
+  height: 200px;
+}
+
+.foto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 0 30px rgba(148, 84, 255, 0.4);
+}
+
+.btn-social {
+  border-radius: 50px;
+  font-size: 0.9rem;
+  padding: 0.45rem 1.2rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary.btn-social {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary.btn-social:hover {
+  background-color: #7b35e8;
+  border-color: #7b35e8;
+}
+
+.about-badge {
+  background-color: rgba(148, 84, 255, 0.15);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+}
+
+.nombre {
+  font-size: 2.4rem;
+  color: #212529;
+}
+
+.rol {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.descripcion {
+  color: #495057;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.tarjetas {
+  background-color: #fff;
+  border: 1px solid rgba(148, 84, 255, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tarjetas:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(148, 84, 255, 0.15);
+}
+
+.label-tarjetas {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.separador {
+  border-color: rgba(148, 84, 255, 0.3);
+  border-width: 2px;
+}
+
+.mi-perfil {
+  color: #212529;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.mi-perfil::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.tarjetas-perfil {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tarjetas-perfil:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(148, 84, 255, 0.12) !important;
+  border-color: rgba(148, 84, 255, 0.3);
+}

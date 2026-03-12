@@ -1,1 +1,109 @@
-<p>contact works!</p>
+<section class=" py-5">
+  <div class="container">
+
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h1 class="contact-title fw-bold">Contacto</h1>
+        <p class="col-5 fs-10 text-muted lead mx-auto">
+          ¿Tienes alguna propuesta, pregunta o simplemente quieres saludar?
+          Escríbeme y te responderé lo antes posible.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-5 justify-content-center">
+
+      <div class="col-12 col-lg-7">
+        <div class="tarjeta-formulario p-4 p-md-5 rounded-4 shadow-sm">
+          <h4 class="fw-bold mb-4">Envíame un mensaje</h4>
+
+          <form (ngSubmit)="enviarFormulario(contactForm)" #contactForm="ngForm" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label fw-semibold">Nombre <span class="text-danger">*</span></label>
+              <input type="text" name="nombre" #nombre="ngModel" ngModel class="form-control form-input" id="nombre"
+                required minlength="2" placeholder="Tu nombre completo"
+                [ngClass]="{'is-invalid': nombre.invalid && nombre.touched}"/>
+              @if (nombre.invalid && nombre.touched) {
+              <div class="invalid-feedback">Por favor, introduce tu nombre.</div>}
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+              <input type="email" class="form-control form-input" id="email" name="email"
+                ngModel #email="ngModel" required email placeholder="tucorreo@ejemplo.com"
+                [ngClass]="{'is-invalid': email.invalid && email.touched}"/>
+              @if (email.invalid && email.touched) {
+              <div class="invalid-feedback">Por favor, introduce un email válido.</div>
+              }
+            </div>
+
+            <div class="mb-3">
+              <label for="asunto" class="form-label fw-semibold">Asunto <span class="text-danger">*</span></label>
+              <input type="text" class="form-control form-input" id="asunto" name="asunto" minlength="2"
+                ngModel #asunto="ngModel" required placeholder="¿De qué se trata?"
+                [ngClass]="{'is-invalid': asunto.invalid && asunto.touched}"/>
+              @if (asunto.invalid && asunto.touched) {
+              <div class="invalid-feedback">Por favor, introduce un asunto.</div>
+              }
+            </div>
+
+            <div class="mb-4">
+              <label for="mensaje" class="form-label fw-semibold">Mensaje <span class="text-danger">*</span></label>
+              <textarea class="form-control form-input" id="mensaje" name="mensaje"
+                ngModel #mensaje="ngModel" required minlength="10" rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                [ngClass]="{'is-invalid': mensaje.invalid && mensaje.touched}"></textarea>
+              @if (mensaje.invalid && mensaje.touched) {
+              <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+              }
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-enviar btn-lg" [disabled]="!contactForm.valid">
+                Enviar Mensaje
+              </button>
+            </div>
+
+          </form>
+
+          @if (enviado) {
+            <div class="alert alert-success mt-3 animate__animated animate__fadeIn" role="alert">
+              ¡Mensaje enviado con éxito!
+            </div>}
+
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="aside-card p-4 rounded-4 shadow-sm mb-4">
+          <h5 class="fw-bold mb-4">Encuéntrame en</h5>
+
+          <a href="https://www.linkedin.com/in/raul-loaiza-pino-008869238" target="_blank" rel="noopener"
+            class="social-link d-flex align-items-center gap-3 mb-3 p-3 rounded-3">
+            <div class="social-icon linkedin-icon">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <div>
+              <div class="fw-bold">LinkedIn</div>
+              <small class="text-muted">Raúl Loaiza Pino</small>
+            </div>
+            <i class="bi bi-arrow-up-right ms-auto text-muted"></i>
+          </a>
+
+          <a href="https://github.com/Raul-Pino" target="_blank" rel="noopener"
+            class="social-link d-flex align-items-center gap-3 p-3 rounded-3">
+            <div class="social-icon github-icon">
+              <i class="bi bi-github"></i>
+            </div>
+            <div>
+              <div class="fw-bold">GitHub</div>
+              <small class="text-muted">Raul Pino</small>
+            </div>
+            <i class="bi bi-arrow-up-right ms-auto text-muted"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

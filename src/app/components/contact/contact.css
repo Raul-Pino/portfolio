@@ -1,0 +1,84 @@
+.tarjeta-formulario,
+.aside-card {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s ease;
+}
+
+.tarjeta-formulario:hover,
+.aside-card:hover {
+  box-shadow: 0 8px 28px rgba(148, 84, 255, 0.1) !important;
+}
+
+.form-input {
+  border-radius: 10px;
+  border: 1.5px solid #dee2e6;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(148, 84, 255, 0.15);
+  outline: none;
+}
+
+.btn-enviar {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-enviar:hover{
+  filter: brightness(0.9);
+}
+.btn-enviar:active{
+  filter: brightness(0.8);
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+
+.social-link {
+  text-decoration: none;
+  color: #212529;
+  border: 1px solid #e9ecef;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
+  color: #212529;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.linkedin-icon {
+  background-color: rgba(0, 119, 181, 0.12);
+  color: #0077b5;
+}
+
+.github-icon {
+  background-color: rgba(36, 41, 47, 0.1);
+  color: #24292f;
+}

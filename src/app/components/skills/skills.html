@@ -1,26 +1,26 @@
-<div class="container py-5">
-    <h2 class="text-center mb-4 fw-bolder fs-1">Mis Habilidades</h2>
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center contact-title fw-bold">Mis Habilidades</h1>
 
+        <div class="row justify-content-center">
 
-
-    <div class="row justify-content-center">
-
-        @for(habilidad of misHabilidades; track habilidad.nombre){
+            @for(habilidad of misHabilidades; track habilidad.nombre){
 
             <div class="justify-content-center w-auto col-md-6 col-lg-4 col-xl-3 mb-4">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img [src]="habilidad.imagen" [alt]="habilidad.nombre" class="profile-img">
+                            <img [src]="habilidad.imagen" [alt]="habilidad.nombre" class="profile-img img-fluid">
                             <h3 class="fs-2 fw-bold">{{ habilidad.nombre }}</h3>
                         </div>
                         <div class="flip-card-back">
-                            <p class="fs-3">{{ habilidad.descripcion }}</p>
+                            <p class="fs-4">{{ habilidad.descripcion }}</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-        }
+            }
+        </div>
     </div>
-</div>
+</section>
