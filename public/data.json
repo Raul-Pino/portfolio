@@ -45,5 +45,34 @@
             "descripcion": "Potente base de datos relacional de código abierto conocida por su extensibilidad y estándares.",
             "imagen": "img/postgresql.png"
         }
+    ],
+    "proyectos":[
+        {
+            "nombre": "Portfolio",
+            "descripcion": "Aplicación web tipo Single Page Application (SPA) desarrollada con Angular 18, diseñada para centralizar mi trayectoria profesional y proyectos. Implementa un sistema de carga dinámica de datos mediante servicios y HttpClient consumiendo archivos JSON, lo que facilita el mantenimiento. El diseño es totalmente responsive gracias a Bootstrap y cuenta con optimización para SEO mediante Server-Side Rendering (SSR).",
+            "imagen": "img/portfolio.png",
+            "tecnologias": [
+                "angular", "css", "bootstrap"
+            ],
+            "github": "https://github.com/Raul-Pino/Portfolio"
+        },
+        {
+            "nombre": "Radio Patio",
+            "descripcion": "Proyecto centrado en la creación de una interfaz de noticias funcional utilizando Bootstrap para la estructura y JavaScript para la interactividad. El enfoque principal fue resolver desafíos de diseño adaptativo, gestionando múltiples rejillas de contenido (grids) y componentes complejos como navbars dinámicas y tarjetas de noticias, garantizando una lectura cómoda en pantallas móviles.",
+            "imagen": "img/radiopatio.png",
+            "tecnologias": [
+                "html","css","javascript", "bootstrap"
+            ],
+            "github": ""
+        },
+        {
+            "nombre": "Lectura Urbana",
+            "descripcion": "Aplicación de gestión de libros desarrollada con HTML5, CSS3 y JavaScript vanilla. Este proyecto pone a prueba la lógica de programación frontend, implementando funciones para filtrar catálogos, buscar títulos y gestionar la disponibilidad de ejemplares. Se trabajó especialmente en la manipulación del DOM para actualizar la interfaz en tiempo real según las acciones del usuario.",
+            "imagen": "img/lecturaurbana.png",
+            "tecnologias": [
+                "html","css","javascript"
+            ],
+            "github": "https://github.com/Raul-Pino/Biblioteca"
+        }
     ]
 }
